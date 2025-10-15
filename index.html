@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تقارير السلامة والصحة المهنية</title>
+    <title>منظومة تقارير السلامة الإلكترونية</title>
+            <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -25,7 +26,6 @@
             min-height: 100vh;
         }
         
-        /* الهيدر البسيط */
         .simple-header {
             background: #2c3e50;
             padding: 25px 20px;
@@ -35,7 +35,7 @@
         
         .header-title h1 {
             color: white;
-            font-size: 28px;
+            font-size: 18px;
             font-weight: 600;
             margin: 0;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
@@ -46,7 +46,6 @@
             min-height: 60vh;
         }
         
-        /* العناوين */
         .section-title {
             color: #2c3e50;
             font-size: 24px;
@@ -57,7 +56,6 @@
             text-align: right;
         }
         
-        /* قسم الترحيب */
         .welcome-section {
             margin-bottom: 40px;
         }
@@ -73,7 +71,6 @@
             text-align: right;
         }
         
-        /* قسم طريقة الاستخدام */
         .section {
             margin-bottom: 40px;
         }
@@ -102,17 +99,17 @@
             top: 0;
         }
         
-        /* قسم الروابط */
         .links-description {
             text-align: center;
             font-size: 16px;
             margin-bottom: 25px;
             color: #555;
         }
-        
+
+        /* ✅ تعديل كروت الروابط */
         .links-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             margin-top: 20px;
         }
@@ -148,7 +145,6 @@
             color: #4CAF50;
         }
         
-        /* قسم التحذير */
         .warning {
             background: #fff3cd;
             border: 2px solid #ffc107;
@@ -161,7 +157,6 @@
             font-weight: 500;
         }
         
-        /* الفوتر البسيط */
         .simple-footer {
             background: #2c3e50;
             color: white;
@@ -170,16 +165,20 @@
             border-top: 4px solid #4CAF50;
             margin-top: 40px;
         }
-        
+
+        /* ✅ تعديل الفوتر ليكون النص تحت بعض */
         .copyright {
             font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
         }
         
         .copyright span {
             font-size: 18px;
         }
         
-        /* التجاوب */
         @media (max-width: 768px) {
             .header-title h1 {
                 font-size: 22px;
@@ -192,7 +191,8 @@
             .section-title {
                 font-size: 22px;
             }
-            
+
+            /* ✅ في الموبايل كارت واحد تحت الآخر */
             .links-grid {
                 grid-template-columns: 1fr;
                 gap: 15px;
@@ -221,28 +221,28 @@
                 font-size: 14px;
             }
         }
+
     </style>
 </head>
 <body>
     <div class="main-container">
-        <!-- الهيدر البسيط -->
         <header class="simple-header">
             <div class="header-title">
-                <h1>👷‍♂️ تقارير السلامة والصحة المهنية</h1>
+                <h1>الشركة المصرية لنقل الكهرباء</h1>
+                <h1>منطقة الإسكندرية وغرب الدلتا</h1>
+                <h1>الإدارة العامة للسلامة والصحة المهنية غرب الدلتا</h1>
+                <h1>منظومة تقارير السلامة الإلكترونية</h1>
             </div>
         </header>
         
-        <!-- المحتوى الرئيسي -->
         <div class="content">
-            <!-- قسم الترحيب -->
             <section class="welcome-section">
                 <h2 class="section-title">مرحباً بكم</h2>
                 <div class="welcome-text">
-                    هذه الصفحة خاصة بالعاملين بإدارة السلامة فقط، وتحتوي على روابط لعمل تقارير السلامة في نماذج جوجل (Google Forms) من خلال الضغط على اسم التقرير أسفل الصفحة.
+                    هذه الصفحة خاصة بالعاملين بإدارة السلامة والصحة المهنية غرب الدلتا فقط، وتحتوي على روابط لعمل تقارير السلامة في نماذج جوجل (Google Forms) من خلال الضغط على رابط التقرير المطلوب.
                 </div>
             </section>
             
-            <!-- قسم طريقة الاستخدام -->
             <section class="section">
                 <h2 class="section-title">طريقة الاستخدام</h2>
                 <ul class="steps">
@@ -253,7 +253,6 @@
                 </ul>
             </section>
             
-            <!-- قسم روابط التقارير -->
             <section class="section">
                 <h2 class="section-title">روابط تقارير العمل</h2>
                 <p class="links-description">اضغط على اسم التقرير الذي تود عمله🔗</p>
@@ -285,20 +284,33 @@
                 </div>
             </section>
             
-            <!-- قسم التحذير -->
             <div class="warning">
                 ⚠️ يرجى التأكد من استخدام المتصفح الموصى به وتفعيل حالة تسجيل الدخول قبل البدء
             </div>
         </div>
         
-        <!-- الفوتر -->
-        <footer class="simple-footer">
-            <div class="footer-content">
-                <div class="copyright">
-                    <span>© 2025 جميع الحقوق محفوظة</span>
-                </div>
+
+<!-- ✅ الفوتر المعدل -->
+<footer class="simple-footer">
+    <div class="footer-content">
+        <div class="copyright">
+            <span>شكرا لاستخدامكم منظومة تقارير السلامة الإلكترونية</span>
+
+            <!-- ✅ نص التصميم بعد التصحيح -->
+            <div style="display:flex; flex-direction:column; align-items:center; margin-top:18px; margin-bottom:6px;">
+                <span style="font-size:16px;">Designed by</span>
+                <span style="font-family:'Great Vibes', cursive; color:#4CAF50; font-size:32px; line-height:1.2; margin-top:4px;">
+                    Yasser Elnaggar
+                </span>
             </div>
-        </footer>
+
+            <span style="margin-top:10px;">2025</span>
+        </div>
+    </div>
+</footer>
+
+
+
     </div>
 </body>
 </html>
